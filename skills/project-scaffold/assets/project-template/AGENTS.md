@@ -1,47 +1,22 @@
-# 專案主規範
+# Project instructions
 
-本文件適用於整個專案。以審慎、可驗證的方式執行工作；簡單任務採用相稱的流程。
+{{DESCRIPTION}}
 
-## 主從規範
+## Master and subordinate rules
 
-- 本文件為主規範，`.agent-rules/` 的細部規範補充本文件；衝突時以主規範為準，並遵守使用者指示及執行環境上層指令。
-- 執行前閱讀本文件，再讀取與任務相關的細部規範；不得假設連結內容會自動載入。
-- 細部規範變更時同步更新索引；空白規範表示尚未定義限制，不表示已選定技術。
+- This is the project's single master instruction document. Read relevant subordinate rules before acting; links do not imply automatic loading.
+- Subordinate rules supplement this document. Follow the master if they conflict, while respecting user instructions and higher-level execution instructions.
+- Keep the index current when selected rules change. No subproject or nested instruction hierarchy is defined here.
 
-| 細部規範 | 適用範圍 |
+| Rule | Purpose |
 | --- | --- |
-| [專案目錄結構](.agent-rules/project-structure.md) | 目錄用途與文件歸屬；新增或調整目錄時讀取。 |
-| [技術堆疊](.agent-rules/tech-stack.md) | 技術選型、執行環境與相依套件；涉及技術實作時讀取。 |
-| [工作追蹤與收尾](.agent-rules/tracking.md) | 工作日誌、交接與「收尾」觸發的 Git Commit & Push。 |
+{{RULE_INDEX}}
 
-完成實質變更並驗證後更新 worklog；恢復工作時先讀取現有 handoff，需暫停或交接時更新 handoff。使用者單獨輸入「收尾」時，必須先讀取追蹤規範，確認並補齊工作日誌，再依規範 Commit & Push；一般工作完成不自動觸發 Git 操作。引述或討論「收尾」不視為執行指令。
+## Working principles
 
-## 一、實作前先釐清
+- Think before acting: inspect relevant files, state consequential assumptions, and clarify uncertainty that affects correctness or scope.
+- Keep solutions simple: make the smallest complete change and preserve necessary validation and data protection.
+- Make focused changes: follow existing conventions, inspect affected callers, and avoid unrelated edits.
+- Verify observable results: define completion criteria and report actual checks, limitations, and unfinished work honestly.
 
-- 先讀取相關程式與設定，確認需求、架構、呼叫端及影響範圍。
-- 明示重要假設與方案取捨；遇到影響正確性、安全或範圍的不確定性時，先釐清再執行受影響步驟。
-
-## 二、簡單優先
-
-- 以最少必要變更完成需求，優先沿用既有模式、標準函式庫與平台能力。
-- 不加入未要求的功能、抽象、設定或相依套件；保留必要驗證、安全與防止資料遺失的處理。
-
-## 三、精準變更
-
-- 每項變更須對應需求，遵循既有架構與格式，不順手修改無關內容。
-- 修改共用邏輯前檢查呼叫端、測試、設定與文件，從根因修正；僅清理由本次變更新增的未使用項目。
-
-## 四、以驗證結果驅動執行
-
-- 定義可觀察的完成條件，多步驟任務列出簡短計畫與驗證方式。
-- 修復缺陷先重現，新增行為驗證必要情境，重構確認前後行為一致。
-- 回報實際變更、驗證結果與限制，不將未執行的檢查描述為通過。
-
-## 溝通與工具
-
-- 使用繁體中文，以嚴謹、極簡且規格化的語言溝通，聚焦架構、影響範圍與異常情境。
-- 操作 GitHub 優先使用 `gh`；Windows 使用者層級工具優先透過 `scoop` 檢查與安裝。
-
-## 參考來源
-
-核心原則改寫自 [Karpathy 啟發的 AGENTS.md 範本](https://github.com/nassimna/karpathy-guidelines/blob/main/AGENTS.md)。
+The detailed project rules are templates to complete later. Their presence does not authorize Git operations, installation, or external actions.

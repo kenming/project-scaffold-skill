@@ -1,0 +1,40 @@
+{
+  "main": {
+    "name": "AGENTS.md",
+    "description": "專案主規範與細部規範索引",
+    "content": "# 專案主規範\n\n{{DESCRIPTION}}\n\n## 主從規範\n\n本文件為唯一主規範，細則補充本文件，衝突時以主規範為準，並遵守使用者指示與執行環境上層指令。依任務讀取相關細則，不假設連結會自動載入。\n\n| 規範 | 用途 |\n| --- | --- |\n{{RULE_INDEX}}\n\n## 共通原則\n\n先釐清重要假設，以最少必要變更完成需求，避免修改無關內容，並如實回報驗證結果與限制。規範模板不代表已授權 Git、安裝或其他外部操作。\n"
+  },
+  "rulesRoot": ".agent-rules",
+  "docsRoot": "docs",
+  "rules": [
+    {
+      "name": "tech-stack.md",
+      "description": "技術堆疊與開發環境規範",
+      "content": "# 技術堆疊\n\n[主規範]({{MAIN_LINK}})\n\n## 用途\n\n{{DESCRIPTION}}\n\n## 適用範圍\n\n待專案確認。\n\n## 已確認技術\n\n待填語言、執行環境、框架、套件管理與版本限制；本模板不預設選型。\n\n## 待確認事項\n\n待專案補充。\n"
+    },
+    {
+      "name": "project-structure.md",
+      "description": "專案目錄結構與文件歸屬",
+      "content": "# 專案目錄結構\n\n[主規範]({{MAIN_LINK}})\n\n## 用途\n\n{{DESCRIPTION}}\n\n```text\n{{TREE}}\n```\n\n此為本次選定骨架，既有專案的其他內容不在本清單內；後續調整時同步維護。\n"
+    },
+    {
+      "name": "tracking.md",
+      "description": "專案追蹤規則的待填範本",
+      "content": "# 專案追蹤\n\n[主規範]({{MAIN_LINK}})\n\n## 用途\n\n{{DESCRIPTION}}\n\n## 適用範圍\n\n待專案確認。\n\n## 待補規則\n\n記錄時機、維護責任與過期資訊處理方式待定；本模板不設定日誌格式、交接格式、時區或 Git 操作。\n"
+    },
+    {
+      "name": "verification.md",
+      "description": "驗證與完成條件的待填範本",
+      "content": "# 驗證規範\n\n[主規範]({{MAIN_LINK}})\n\n## 用途\n\n{{DESCRIPTION}}\n\n## 適用範圍\n\n待專案確認。\n\n## 待補規則\n\n完成條件、必要檢查與結果回報方式待定，不預填專案命令。\n"
+    }
+  ],
+  "directories": [
+    { "path": "requirements", "description": "需求文件" },
+    { "path": "research", "description": "研究資料" },
+    { "path": "architecture", "description": "架構文件" },
+    { "path": "tracking", "description": "專案追蹤主目錄（日誌、交接）" },
+    { "path": "tracking/devlog", "description": "開發過程與驗證紀錄" },
+    { "path": "tracking/handoff", "description": "目前狀態與接續事項" },
+    { "path": "guides", "description": "操作與使用指南" }
+  ]
+}
