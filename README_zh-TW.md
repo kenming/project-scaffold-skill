@@ -4,13 +4,13 @@
 
 透過附用途註解的目錄樹預覽專案骨架。直接描述需要的修改，檢視更新後的結構，確認後才建立檔案。
 
-<p align="center"><img src="assets/readme/project-scaffold-zh-TW-01.svg" alt="Project Scaffold 專案腳手架流程圖" width="900"></p>
+<p align="center"><img src="assets/readme/project-scaffold-zh-TW-01.svg" alt="Project Scaffold 專案腳手架流程圖" width="760"></p>
 
 ## 專案定位與目的
 
 Project Scaffold 是供開發者與 Agent 協作時使用的軟體專案初始化工具。目的在於先建立規範與文件的整理基礎，明確安排專案規則、需求、研究、架構決策及追蹤記錄的位置，讓後續開發有一致的起點。
 
-<p align="center"><img src="assets/readme/project-scaffold-zh-TW-02.svg" alt="Project Scaffold 專案規則圖解" width="900"></p>
+<p align="center"><img src="assets/readme/project-scaffold-zh-TW-02.svg" alt="Project Scaffold 專案規則圖解" width="760"></p>
 
 適用於初始化或整理下列專案：
 
@@ -21,7 +21,7 @@ Project Scaffold 是供開發者與 Agent 協作時使用的軟體專案初始�
 
 模板不綁定程式語言或框架，生成範圍為整理用途的目錄與規範模板；應用程式原始碼、相依套件、建置與部署則在後續開發階段處理。新專案可直接採用，既有專案也可選擇性補齊缺少的結構。
 
-<p align="center"><img src="assets/readme/project-scaffold-zh-TW-03.svg" alt="Project Scaffold 專案文件圖解" width="900"></p>
+<p align="center"><img src="assets/readme/project-scaffold-zh-TW-03.svg" alt="Project Scaffold 專案文件圖解" width="760"></p>
 
 ## 安裝方式
 
