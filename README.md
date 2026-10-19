@@ -4,9 +4,13 @@ English | [繁體中文](README_zh-TW.md)
 
 An Agent Skill for creating a project scaffold through an annotated directory preview. Describe the changes you want, review the updated tree, and confirm before files are created.
 
+<p align="center"><img src="assets/readme/project-scaffold-en-01.svg" alt="Project Scaffold workflow overview" width="900"></p>
+
 ## Purpose and intended use
 
 Project Scaffold prepares the instructions and documentation structure for software development with an Agent. Its purpose is to establish where project rules, requirements, research, architecture decisions and tracking records belong, so developers and Agents can work from a consistent starting point.
+
+<p align="center"><img src="assets/readme/project-scaffold-en-02.svg" alt="Project rules structure" width="900"></p>
 
 It is suitable for initializing or organizing projects such as:
 
@@ -16,6 +20,8 @@ It is suitable for initializing or organizing projects such as:
 - CLI tools, automation utilities and reusable Agent Skills.
 
 The scaffold is independent of programming languages and frameworks. It creates organizational directories and rule templates; application source code, dependencies, builds and deployment remain part of the subsequent development work. Teams can adapt it to a new project or selectively add missing structure to an existing one.
+
+<p align="center"><img src="assets/readme/project-scaffold-en-03.svg" alt="Project documents structure" width="900"></p>
 
 ## Installation
 
